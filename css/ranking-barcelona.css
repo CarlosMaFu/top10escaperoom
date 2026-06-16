@@ -1,0 +1,133 @@
+.barcelona-salas{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.barcelona-salas h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+    color:#f59e0b;
+}
+
+.barcelona-sala{
+    width:100%;
+    display:flex;
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.barcelona-sala:hover{
+    transform:translateY(-5px);
+}
+
+.barcelona-sala img{
+    width:400px;
+    min-width:400px;
+    height:300px;
+    object-fit:cover;
+}
+
+.barcelona-info{
+    padding:35px;
+    flex:1;
+}
+
+.barcelona-badge{
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.barcelona-info h3{
+    font-size:2rem;
+    margin-bottom:10px;
+    color:white;
+}
+
+.ubicacion{
+    color:#f59e0b;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.barcelona-info p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.barcelona-datos{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.barcelona-datos span{
+    background:#0f172a;
+    padding:10px 15px;
+    border-radius:10px;
+    color:white;
+}
+
+.barcelona-btn{
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.barcelona-btn:hover{
+    background:#ef4444;
+}
+
+@media (max-width: 768px) {
+    .barcelona-salas {
+        padding: 40px 15px;
+    }
+
+    .barcelona-salas h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .barcelona-sala {
+        flex-direction: column;
+    }
+
+    .barcelona-sala img {
+        width: 100%;
+        min-width: auto;
+        height: 250px;
+    }
+
+    .barcelona-info {
+        padding: 20px;
+    }
+
+    .barcelona-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .barcelona-datos {
+        gap: 10px;
+    }
+
+    .barcelona-datos span {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}

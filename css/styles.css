@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 8%;
+    padding: 2px 8%;
     /* Nav más estrecho */
     background: #f1f5f9;
     /* Color de navegación bastante más claro */
@@ -54,7 +54,7 @@ body {
 }
 
 .logo img {
-    width: 170px;
+    width: 250px;
     /* Logo un poco más grande */
     height: auto;
 }
@@ -69,7 +69,7 @@ body {
     .navbar {
         flex-direction: column;
         gap: 12px;
-        padding: 12px 4%;
+        padding: 6px 4%;
         text-align: center;
     }
 
@@ -538,16 +538,19 @@ tr:nth-child(even) {
         grid-template-columns: 1fr;
     }
 
-    .cta, .cta-final {
+    .cta,
+    .cta-final {
         margin: 30px 4%;
         padding: 50px 20px;
     }
 
-    .cta h2, .cta-final h2 {
+    .cta h2,
+    .cta-final h2 {
         font-size: 2rem;
     }
 
-    .cta p, .cta-final p {
+    .cta p,
+    .cta-final p {
         font-size: 1.05rem;
     }
 }

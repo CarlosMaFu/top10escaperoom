@@ -1,0 +1,133 @@
+.santander-salas{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 20px;
+}
+
+.santander-salas h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+    color:#f59e0b;
+}
+
+.santander-sala{
+    width:100%;
+    display:flex;
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.santander-sala:hover{
+    transform:translateY(-5px);
+}
+
+.santander-sala img{
+    width:400px;
+    min-width:400px;
+    height:300px;
+    object-fit:cover;
+}
+
+.santander-info{
+    padding:35px;
+    flex:1;
+}
+
+.santander-badge{
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.santander-info h3{
+    font-size:2rem;
+    margin-bottom:10px;
+    color:white;
+}
+
+.ubicacion{
+    color:#f59e0b;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.santander-info p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.santander-datos{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:25px;
+}
+
+.santander-datos span{
+    background:#0f172a;
+    padding:10px 15px;
+    border-radius:10px;
+    color:white;
+}
+
+.santander-btn{
+    display:inline-block;
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.santander-btn:hover{
+    background:#ef4444;
+}
+
+@media (max-width: 768px) {
+    .santander-salas {
+        padding: 40px 15px;
+    }
+
+    .santander-salas h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .santander-sala {
+        flex-direction: column;
+    }
+
+    .santander-sala img {
+        width: 100%;
+        min-width: auto;
+        height: 250px;
+    }
+
+    .santander-info {
+        padding: 20px;
+    }
+
+    .santander-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .santander-datos {
+        gap: 10px;
+    }
+
+    .santander-datos span {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
