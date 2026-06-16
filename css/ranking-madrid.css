@@ -93,3 +93,41 @@
 .madrid-btn:hover{
     background:#ef4444;
 }
+
+@media (max-width: 768px) {
+    .madrid-salas {
+        padding: 40px 15px;
+    }
+
+    .madrid-salas h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .madrid-sala {
+        flex-direction: column;
+    }
+
+    .madrid-sala img {
+        width: 100%;
+        min-width: auto;
+        height: 250px;
+    }
+
+    .madrid-info {
+        padding: 20px;
+    }
+
+    .madrid-info h3 {
+        font-size: 1.6rem;
+    }
+
+    .madrid-datos {
+        gap: 10px;
+    }
+
+    .madrid-datos span {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
