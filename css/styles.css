@@ -6,12 +6,18 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #0f172a;
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.85),
+            rgba(15, 23, 42, 0.85)),
+        url("../imagenes/fondo-web.jpg") no-repeat center center fixed;
+    background-size: cover;
     color: white;
 }
 
 .hero {
-    height: 100vh;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
     background:
         linear-gradient(rgba(15, 23, 42, .8),
             rgba(15, 23, 42, .8)),
@@ -20,48 +26,87 @@ body {
     background-position: center;
 }
 
+.hero.home-hero {
+    background:
+        linear-gradient(rgba(15, 23, 42, 0.8),
+            rgba(15, 23, 42, 0.95)),
+        url("../imagenes/fondo-web.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    background: #ffffff;
+    padding: 6px 8%; /* Nav más estrecho */
+    background: #f1f5f9; /* Color de navegación bastante más claro */
+    border-bottom: 2px solid #cbd5e1; /* Línea de color off-white (no blanca del todo) */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .logo img {
-    width: 150px;
+    width: 170px; /* Logo un poco más grande */
     height: auto;
 }
 
 @media (max-width:768px) {
 
     .logo img {
-        width: 100px;
+        width: 120px; /* Logo más grande en móvil */
     }
 
 }
 
 .navbar ul {
     display: flex;
-    gap: 100px;
+    gap: 60px;
+    /* Reducido para evitar overflows */
     list-style: none;
 }
 
 .navbar a {
     text-decoration: none;
-    color: rgb(14, 13, 13);
+    color: #0f172a; /* Color oscuro para contraste en fondo claro */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #dc2626; /* Hover de color rojo del logo */
 }
 
 .hero-content {
-    height: 80%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 20px;
+}
+
+.hero-historia {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 8% 60px;
+    /* Padding vertical reducido */
+}
+
+.badge {
+    background: rgba(254, 240, 138, 0.1);
+    color: #fef08a; /* Amarillo mucho más claro */
+    border: 1px solid rgba(254, 240, 138, 0.25);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 
 .hero-content h1 {
@@ -105,8 +150,9 @@ section {
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Encabezado global más grande */
     margin-bottom: 50px;
+    color: #fef08a; /* Del mismo color amarillo claro que los h1 */
 }
 
 .rooms {
@@ -204,8 +250,8 @@ h2 {
 }
 
 .stats h3 {
-    font-size: 3rem;
-    color: #f59e0b;
+    font-size: 3.2rem;
+    color: #fde047; /* Amarillo más claro */
 }
 
 .cta {
@@ -251,6 +297,18 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+}
+
+
 .footer-links {
     width: 100%;
     text-align: center;
@@ -289,6 +347,10 @@ footer {
 }
 
 @media (max-width:768px) {
+
+    .footer-logo img {
+        width: 120px;
+    }
 
     .footer-links ul {
         flex-direction: column;
@@ -348,3 +410,217 @@ th {
 tr:nth-child(even) {
     background: #f5f5f5;
 }
+
+/* Secciones de contenido con borde 3D */
+.contenido {
+    border: 2px solid #cbd5e1; /* Borde liso (sin rayas/ridge) y en tono off-white (no blanco puro) */
+    border-radius: 16px;
+    background: #1e293b;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    margin: 40px 8%; /* Secciones un poco más anchas (margin lateral reducido al 8%) */
+    padding: 50px 40px;
+    /* Ajuste leve de espaciado interno */
+}
+
+/* Párrafos y títulos dentro de las secciones de contenido */
+.contenido p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #cbd5e1;
+    /* Color claro para mejor legibilidad */
+}
+
+.contenido p:last-child {
+    margin-bottom: 0;
+}
+
+.contenido h3 {
+    font-size: 1.6rem; /* Título h3 más grande */
+    color: #fde047; /* Amarillo más claro */
+    margin-bottom: 12px;
+}
+
+/* Contenedor flex para alinear imagen (izquierda) y contenido (derecha) */
+.populares-flex {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.populares-flex .caja {
+    flex: 0 0 35%;
+    max-width: 320px;
+}
+
+.populares-flex .caja img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: block;
+}
+
+.populares-flex .beneficios,
+.populares-flex .tematicas,
+.populares-flex .dos-columnas,
+.populares-flex .estadisticas {
+    flex: 1;
+}
+
+/* Distribución interna para la sección de "Dos Columnas" en desktop */
+.populares-flex .dos-columnas {
+    display: flex;
+    gap: 30px;
+}
+
+.populares-flex .dos-columnas .tipo {
+    flex: 1;
+}
+
+/* Distribución interna para la sección de "Temáticas" */
+.populares-flex .tematicas .card-tematica {
+    margin-bottom: 20px;
+}
+
+.populares-flex .tematicas .card-tematica:last-child {
+    margin-bottom: 0;
+}
+
+/* Ajustes responsivos para móviles */
+@media (max-width: 768px) {
+    .contenido {
+        margin: 30px 4%;
+        padding: 40px 20px;
+    }
+
+    .populares-flex {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .populares-flex .caja {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .populares-flex .dos-columnas {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Estilos para las páginas legales (aviso legal, cookies, privacidad) */
+.seccion-legal {
+    padding: 60px 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-legal {
+    max-width: 1000px; /* Contenedor legal más grande */
+    width: 100%;
+    background: #1e293b; /* Fondo de tarjeta a juego con el resto de la web */
+    border: 2px solid #cbd5e1; /* Borde liso y tono off-white (no del todo blanco) */
+    border-radius: 16px;
+    padding: 50px 60px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-legal h1 {
+    font-size: 2.8rem; /* Encabezado mucho más grande */
+    color: #fef08a; /* Amarillo mucho más claro (casi crema) */
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #cbd5e1; /* Línea de color off-white (no blanca del todo) */
+    padding-bottom: 15px;
+}
+
+.contenedor-legal h2 {
+    font-size: 1.8rem; /* Encabezado más grande */
+    color: #fef08a; /* Del mismo color amarillo claro que los h1 */
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.contenedor-legal h3 {
+    font-size: 1.4rem; /* Encabezado más grande */
+    color: #e2e8f0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.contenedor-legal p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    text-align: justify; /* Alineación justificada para lectura clara y formal */
+}
+
+.contenedor-legal p strong {
+    color: #ffffff;
+}
+
+.contenedor-legal ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+}
+
+.contenedor-legal li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.contenedor-legal table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+.contenedor-legal th, 
+.contenedor-legal td {
+    padding: 12px;
+    border: 1px solid #475569;
+    color: #cbd5e1;
+    text-align: left;
+}
+
+.contenedor-legal th {
+    background: #0f172a;
+    color: #fde047; /* Amarillo más claro */
+    font-weight: 700;
+}
+
+.contenedor-legal tr:nth-child(even) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .seccion-legal {
+        padding: 30px 4%;
+    }
+    
+    .contenedor-legal {
+        padding: 30px 20px;
+    }
+    
+    .contenedor-legal h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .contenedor-legal h2 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+}
+
