@@ -9,7 +9,7 @@ body {
     background:
         linear-gradient(rgba(15, 23, 42, 0.85),
             rgba(15, 23, 42, 0.85)),
-        url("../imagenes/fondo-web.jpg") no-repeat center center fixed;
+        url("../imagenes/fondo-web2.jfif") no-repeat center center fixed;
     background-size: cover;
     color: white;
 }
@@ -30,7 +30,7 @@ body {
     background:
         linear-gradient(rgba(15, 23, 42, 0.8),
             rgba(15, 23, 42, 0.95)),
-        url("../imagenes/fondo-web.jpg");
+        url("../imagenes/fondo-laberinto.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -39,21 +39,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6px 8%; /* Nav más estrecho */
-    background: #f1f5f9; /* Color de navegación bastante más claro */
-    border-bottom: 2px solid #cbd5e1; /* Línea de color off-white (no blanca del todo) */
+    padding: 6px 8%;
+    /* Nav más estrecho */
+    background: #f1f5f9;
+    /* Color de navegación bastante más claro */
+    border-bottom: 2px solid #cbd5e1;
+    /* Línea de color off-white (no blanca del todo) */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    width: 170px; /* Logo un poco más grande */
+    width: 170px;
+    /* Logo un poco más grande */
     height: auto;
 }
 
 @media (max-width:768px) {
 
     .logo img {
-        width: 120px; /* Logo más grande en móvil */
+        width: 120px;
+        /* Logo más grande en móvil */
     }
 
 }
@@ -61,19 +66,18 @@ body {
 .navbar ul {
     display: flex;
     gap: 60px;
-    /* Reducido para evitar overflows */
     list-style: none;
 }
 
 .navbar a {
     text-decoration: none;
-    color: #0f172a; /* Color oscuro para contraste en fondo claro */
+    color: #0f172a;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #dc2626; /* Hover de color rojo del logo */
+    color: #dc2626;
 }
 
 .hero-content {
@@ -92,12 +96,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px 8% 60px;
-    /* Padding vertical reducido */
 }
 
 .badge {
     background: rgba(254, 240, 138, 0.1);
-    color: #fef08a; /* Amarillo mucho más claro */
+    color: #fef08a;
     border: 1px solid rgba(254, 240, 138, 0.25);
     padding: 6px 16px;
     border-radius: 30px;
@@ -150,9 +153,11 @@ section {
 }
 
 h2 {
-    font-size: 3rem; /* Encabezado global más grande */
+    font-size: 3rem;
+    /* Encabezado global más grande */
     margin-bottom: 50px;
-    color: #fef08a; /* Del mismo color amarillo claro que los h1 */
+    color: #fef08a;
+    /* Del mismo color amarillo claro que los h1 */
 }
 
 .rooms {
@@ -251,7 +256,8 @@ h2 {
 
 .stats h3 {
     font-size: 3.2rem;
-    color: #fde047; /* Amarillo más claro */
+    color: #fde047;
+    /* Amarillo más claro */
 }
 
 .cta {
@@ -300,11 +306,11 @@ footer {
 .footer-logo {
     width: 100%;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -413,11 +419,13 @@ tr:nth-child(even) {
 
 /* Secciones de contenido con borde 3D */
 .contenido {
-    border: 2px solid #cbd5e1; /* Borde liso (sin rayas/ridge) y en tono off-white (no blanco puro) */
+    border: 2px solid #cbd5e1;
+    /* Borde liso (sin rayas/ridge) y en tono off-white (no blanco puro) */
     border-radius: 16px;
     background: #1e293b;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-    margin: 40px 8%; /* Secciones un poco más anchas (margin lateral reducido al 8%) */
+    margin: 40px 8%;
+    /* Secciones un poco más anchas (margin lateral reducido al 8%) */
     padding: 50px 40px;
     /* Ajuste leve de espaciado interno */
 }
@@ -435,8 +443,10 @@ tr:nth-child(even) {
 }
 
 .contenido h3 {
-    font-size: 1.6rem; /* Título h3 más grande */
-    color: #fde047; /* Amarillo más claro */
+    font-size: 1.6rem;
+    /* Título h3 más grande */
+    color: #fde047;
+    /* Amarillo más claro */
     margin-bottom: 12px;
 }
 
@@ -518,33 +528,42 @@ tr:nth-child(even) {
 }
 
 .contenedor-legal {
-    max-width: 1000px; /* Contenedor legal más grande */
+    max-width: 1000px;
+    /* Contenedor legal más grande */
     width: 100%;
-    background: #1e293b; /* Fondo de tarjeta a juego con el resto de la web */
-    border: 2px solid #cbd5e1; /* Borde liso y tono off-white (no del todo blanco) */
+    background: #1e293b;
+    /* Fondo de tarjeta a juego con el resto de la web */
+    border: 2px solid #cbd5e1;
+    /* Borde liso y tono off-white (no del todo blanco) */
     border-radius: 16px;
     padding: 50px 60px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .contenedor-legal h1 {
-    font-size: 2.8rem; /* Encabezado mucho más grande */
-    color: #fef08a; /* Amarillo mucho más claro (casi crema) */
+    font-size: 2.8rem;
+    /* Encabezado mucho más grande */
+    color: #fef08a;
+    /* Amarillo mucho más claro (casi crema) */
     text-align: center;
     margin-bottom: 40px;
-    border-bottom: 2px solid #cbd5e1; /* Línea de color off-white (no blanca del todo) */
+    border-bottom: 2px solid #cbd5e1;
+    /* Línea de color off-white (no blanca del todo) */
     padding-bottom: 15px;
 }
 
 .contenedor-legal h2 {
-    font-size: 1.8rem; /* Encabezado más grande */
-    color: #fef08a; /* Del mismo color amarillo claro que los h1 */
+    font-size: 1.8rem;
+    /* Encabezado más grande */
+    color: #fef08a;
+    /* Del mismo color amarillo claro que los h1 */
     margin-top: 35px;
     margin-bottom: 15px;
 }
 
 .contenedor-legal h3 {
-    font-size: 1.4rem; /* Encabezado más grande */
+    font-size: 1.4rem;
+    /* Encabezado más grande */
     color: #e2e8f0;
     margin-top: 25px;
     margin-bottom: 10px;
@@ -555,7 +574,8 @@ tr:nth-child(even) {
     line-height: 1.7;
     color: #cbd5e1;
     margin-bottom: 20px;
-    text-align: justify; /* Alineación justificada para lectura clara y formal */
+    text-align: justify;
+    /* Alineación justificada para lectura clara y formal */
 }
 
 .contenedor-legal p strong {
@@ -579,7 +599,7 @@ tr:nth-child(even) {
     border-collapse: collapse;
 }
 
-.contenedor-legal th, 
+.contenedor-legal th,
 .contenedor-legal td {
     padding: 12px;
     border: 1px solid #475569;
@@ -589,7 +609,8 @@ tr:nth-child(even) {
 
 .contenedor-legal th {
     background: #0f172a;
-    color: #fde047; /* Amarillo más claro */
+    color: #fde047;
+    /* Amarillo más claro */
     font-weight: 700;
 }
 
@@ -608,19 +629,18 @@ tr:nth-child(even) {
     .seccion-legal {
         padding: 30px 4%;
     }
-    
+
     .contenedor-legal {
         padding: 30px 20px;
     }
-    
+
     .contenedor-legal h1 {
         font-size: 2.2rem;
         margin-bottom: 30px;
     }
-    
+
     .contenedor-legal h2 {
         font-size: 1.5rem;
         margin-top: 25px;
     }
 }
-
